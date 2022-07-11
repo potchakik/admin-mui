@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Topstories from "./components/list/Topstories";
+import LatestArticle from "./components/list/LatestArticle";
+import EditorsPicks from "./components/list/EditorsPick";
+import ExtendedLatestArticle from "./components/extendedList/ExtendedLatestArticle";
+import ExtendedEditorsPicks from "./components/extendedList/ExtendedEditorsPick";
+import ExtendedTopstories from "./components/extendedList/ExtendedTopstories";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ExtendedTopstories />
     </div>
   );
 }
